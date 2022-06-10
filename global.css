@@ -1,0 +1,194 @@
+/* Custom Disboard */
+html {
+  color: #e6e6e6;
+  background: #32343d;
+  overflow:hidden;
+}
+body {
+  font-family: Dosis;
+  color: #e6e6e6;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.listing-card {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+.listing-card .server-header {
+  /* position: relative; */
+  height: 3.75rem;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  background: #242732;
+  border-radius: 0.2rem 0.2rem 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-right: 0.5rem solid #242732;
+  box-shadow: 0 -5px 5px -5px #242424;
+}
+
+.listing-card.has-review .server-header {
+  border-radius: 0.2rem 0 0 0;
+}
+
+.listing-card .server-icon {
+  /* position: relative;
+  z-index: 2; */
+  float: left;
+  /* background: url(/no-icon.png);
+  background-size: contain; */
+}
+
+.listing-card .server-icon img,
+.listing-card .server-icon a {
+  display: block;
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.server-detail .server-icon {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  background-size: contain;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.listing-card .server-info {
+  margin-left: 3.75rem;
+  padding-left: 0.8rem;
+}
+
+.listing-card .server-name {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 2.0625rem;
+  line-height: 2.0625rem;
+  overflow: hidden;
+}
+
+.listing-card .server-name a {
+  color: #fff;
+}
+
+.server-detail .server-name {
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: left;
+  font-size: 2.8rem;
+  font-family: Dosis;
+  font-weight: 700;
+  color: #fff;
+  text-transform: none;
+}
+
+.listing-card .server-tags {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.listing-card .server-tags .tag .name {
+  font-size: 0.9em;
+}
+
+.server-tags {
+  width: fit-content;
+  margin: auto;
+}
+
+.tags,
+.categories {
+  overflow: hidden;
+}
+
+.tags li,
+.categories li {
+  float: left;
+  margin: 0 0.3rem 0.3rem 0;
+}
+
+.tags .tag,
+.categories .tag {
+  margin: 0;
+}
+
+.tag:not(body) {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  background-color: #1d9595;
+  border: 0;
+  padding: 0.8em 0.5em;
+  font-size: 0.9rem;
+  height: 1em;
+  line-height: 1em;
+  color: #e6e6e6;
+  margin-right: 0.1rem;
+  font-size: 1em;
+  font-family: Dosis;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-join {
+  padding: 0 1.5em;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: Dosis;
+  font-weight: 700;
+  background: #5865f2;
+  border-radius: 3.5rem;
+}
+
+.listing-card .server-join {
+  padding: 1rem;
+  background: #2f3341;
+  text-align: center;
+}
+
+.listing-card .server-join .button-join {
+  width: 90%;
+  max-width: 18.75rem;
+  height: 2.5rem;
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+.listing-card .server-join .button-join:hover,
+.listing-card .server-join .button-join:active {
+  transform: scale(1.03, 1.03);
+}
+
+.listing-card:hover .button-join {
+  opacity: 1;
+}
+
+.button.is-discord {
+  color: #fff;
+  background: #5865f2;
+  border-color: transparent;
+}
+
+.listing-card .server-join .button-join {
+  background: rgba(10, 10, 10, 0.4);
+}
+
+.button-join:hover {
+  background: #4f5cf1 !important;
+}
+
+.server-body {
+  background: #2f3341;
+}
